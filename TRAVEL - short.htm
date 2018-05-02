@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Travel to Cuba</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="travelstyle-short.css">
+	<script type="text/javascript"> 
+        /*//creamos el objeto reloj
+        var the_clock = {
+            dameLaHora : function laHora () {
+                time = new Date();
+      			return time.toLocaleTimeString();
+            }
+        };
+        setTimeout ("the_clock.dameLaHora", 500);//setTimeout accede a funciones, pero no sé a cuál tiene que acceder, ni dónde colocarlo, porque todas las funciones están dentro de un objeto.
+        
+        //nos creamos 3 copias del objeto reloj
+        var clock_Spain = the_clock.dameLaHora();
+        var clock_Vietnam = the_clock.dameLaHora();
+        var clock_Cambodia = the_clock.dameLaHora();
+        var clock_Cuba = the_clock.dameLaHora();
+
+        console.log('clock_Spain -->',clock_Spain);
+        console.log('clock_Vietnam -->',clock_Vietnam);
+        console.log('clock_Cambodia -->',clock_Cambodia);
+        console.log('clock_Cuba -->',clock_Cuba);*/
+
+        function the_clock () {
+          	time = new Date();
+        	return time.toLocaleTimeString();
+        	setTimeout ("the_clock", 500);// por qué no funciona???
+        };
+        
+        //nos creamos 3 copias del objeto reloj
+        var clock_Spain = new the_clock();
+        var clock_Vietnam = new the_clock();
+        var clock_Cambodia = new the_clock();
+        var clock_Cuba = new the_clock();
+
+        console.log(the_clock());
+        //Error: clock_Spain is not a function
+        console.log('clock_Spain -->', clock_Spain());
+        console.log('clock_Vietnam -->',clock_Vietnam ());
+        console.log('clock_Cambodia -->',clock_Cambodia ());
+        console.log('clock_Cuba -->',clock_Cuba ());  
+    </script>
+</head>
+
+<body>
+
+<div class="menu" id="hmenu">
+	<div class="mainlogo">
+		<a href="TRAVEL.htm">
+			<img src="mapa-mundi.svg" alt="Around the World">
+			<p>Travel like you mean it</p>
+		</a>
+	</div>
+	<div id="hmainmenu">
+		<nav class="hmenunav" id="hmenunav"> 
+			<ul class="navlist">
+				<li class ="navItem_dropdown">
+					<a href="web-menu">Menu</a>
+					<ul class="dropdown-list">
+						<li><a href="Europe.html"><span></span> Europe</a></li>
+						<li><a href="Asia.html"><span></span> Asia</a> </li>
+						<li><a href="America.html"><span></span> America</a> </li>
+					</ul>	
+				</li> <!--revisar enlaces, abrir un desplegable a los continentes-->
+
+				<li class="navItem"><a href="photos">Gallery</a></li>
+				<li class="navItem"><a href="blog">BlogStory</a></li>
+				<li class="navItem"><input class="search" type="text" placeholder="Click to search" name="search"></li>
+			</ul>
+			<!--<div class="search_container" id="search">
+				<form action="/action_page.php">
+      				<input type="text" placeholder="Click to search" name="search">
+      				<button type="submit"><i class="fa fa-search"></i></button>
+    			</form>
+  			</div>-->
+  		</nav>
+	</div>
+</div>
+
+
+<div class="continents">
+
+	<div class="_continent" id="_continentEurope">
+		<div class="_continent_name" id="Europe">
+			<a href="Europe.html">
+				<h2 id="Europe_head" title="Travel to Europe">Europe</h2>
+			</a>
+		</div>
+		<div>
+			<div class="country" id=country_Spain>
+				<a href="Spain.jpg" target="_blank"> <img class="country_picture" src="Spain.jpg" alt="Las Médulas"></a>
+				<div class="country_name">Spain</div>
+					<form class=form_clock id=clock_Spain name="form_GMT2">
+	  					<input class="clock" type="text" name="timeGMT2" size="10">
+	  				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="_continent" id="_continentAsia">
+		<div class="_continent_name" id="Asia">
+			<a href="Asia.htm">
+				<h2 id="Asia_head" title="Travel to Asia">Asia</h2>
+			</a>
+		</div>
+		<div>
+  			<div class="country" id="country_Vietnam">
+  				<a href="Vietnam.jpg" target="_blank"> <img class="country_picture" src="Vietnam.jpg" alt="Hanoi"></a>
+  				<div class="country_name">Vietnam</div>
+  				<form class=form_clock id=clock_Vietnam name="form_GMT2">
+	  					<input class="clock" type="text" name="timeGMT2" size="10">
+	  				</form>
+  			</div>
+  			<div class="country" id="conutry_Cambodia">
+  				<a href="Cambodia.jpg" target="_blank"> <img class="country_picture" src="Cambodia.jpg" alt="Hanoi"></a>
+  				<div class="country_name">Cambodia</div>
+  				<form class=form_clock id=clock_Cambodia name="form_GMT2">
+	  					<input class="clock" type="text" name="timeGMT2" size="10">
+	  				</form>
+  			</div>
+  		</div>
+	</div>
+
+	<div class="_continent" id="_continentAmerica">
+		<div class="_continent_name" id="America">
+			<a href="America.htm">
+				<h2 id="America_head" title="Travel to America">America</h2>
+			</a>
+		</div>
+		<div>
+  			<div class="country" id="country_Cuba">
+  				<a href="Cuba.jpg" target="_blank"> <img class="country_picture" src="Cuba.jpg" alt="La Habana"></a>
+  				<div class="country_name">Cuba</div>
+  				<form  class="form_clock" id="clock_Cuba" name="form_timeCuba">
+					<input class="clock" type="text" name="timeCuba" size="10" >
+				</form>
+  			</div>
+  		</div>
+	</div>
+</div>
+
+
+
+<div class="menu" id="fmenu">
+	<div class="mainlogo" id="fmainlogo">
+		<a href="TRAVEL.htm">
+			<img src="mapa-mundi.svg" alt="Around the World">
+			<p>Travel like you mean it</p>
+		</a>
+	</div>
+	<div id="fmainmenu">
+		<nav id="fmenunav"> 
+			<ul>
+				<li><a href="web menu">Menu</a></li> <!--revisar enlaces, abrir un desplegable a los continentes-->
+				<li><a href="photos">Gallery</a></li>
+				<li><a href="blog">BlogStory</a></li>
+				<li><a href="search">Search</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	  /*//accedemos a los tres "huecos" donde mostraremos los relojes
+	document.getElementById('clock_Spain').innerHTML = clock_Spain;
+    document.getElementById('clock_Vietnam').innerHTML = clock_Vietnam;
+    document.getElementById('clock_Cambodia').innerHTML = clock_Cambodia;
+    document.getElementById('clock_Cuba').innerHTML = clock_Cuba;*/
+
+    document.getElementById('clock_Spain').innerHTML = clock_Spain;
+    document.getElementById('clock_Vietnam').innerHTML = clock_Vietnam;
+    document.getElementById('clock_Cambodia').innerHTML = clock_Cambodia;
+    document.getElementById('clock_Cuba').innerHTML = clock_Cuba;
+	
+	
+
+</script>
+
+</body>
+</html>

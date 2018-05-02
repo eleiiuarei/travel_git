@@ -1,0 +1,32 @@
+
+<html> 
+<head> 
+<title>Reloj con Javascript</title> 
+<script type="text/javascript"> 
+	function mueveRelojC(){ 
+   		exactTime = new Date()
+   		hour = exactTime.getHours()
+   		minute = exactTime.getMinutes()
+   		second = exactTime.getSeconds()
+
+   		clock = hour + " : " + minute + " : " + second
+
+   		document.form_timeCuba.timeCuba.value = clock
+
+   		setTimeout("mueveRelojC()",1000)
+	} 
+	</script>
+</head> 
+
+<body onload="mueveRelojC()"> 
+
+Vemos aquí el reloj de Cuba funcionando... 
+
+<form name="form_timeCuba">
+<input type="text" name="timeCuba" size="10">
+</form>
+
+</body> 
+</html> 
+ 
+

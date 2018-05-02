@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<script>
+function startTime(){
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = todat.getSeconds();
+		m = reviewTime (m);
+		s = reviewTime (s);
+		document.getElementById ("t_Cuba").innerHTML= h+":"+m+":"+s;
+		var t = setTimeout (startTime, 500);
+	}
+	function reviewTime (i){
+		if (i<10){i = "0"+i};
+		return i;
+	}
+</script>
+</head>
+
+<body>
+
+<div class="country" id="country_Cuba">
+  	<p>Cuba</p>
+  	<p onload="startTime()" class="date-time" id="t_Cuba"></p>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		Cuba = new Date();
+		h = Cuba.getHours();
+		m = Cuba.getMinutes();
+	
+		reloj = h+":"+m;
+
+		document.getElementById("t_Cuba").innerHTML = reloj;
+	</script>
+</head>
+
+<body>
+
+<div class="country" id="t_Cuba"></div>
+
+
+</body>
+</html>
+

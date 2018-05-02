@@ -1,0 +1,210 @@
+body{
+	background-color: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/*HEADER*/
+#hmenu{
+	background-color: linen; /*si esto marca todo el div, por qué se ve blanco en las cajas, no va anidado?
+	clear:both;/*why does not work?*/
+	clear: both;
+}
+.mainlogo{
+	float: left;
+	margin-left: 60px;
+	margin-bottom: 60px;
+}
+.mainlogo p{
+	margin:20px;
+	float: left;
+}
+.mainlogo img{
+	float: left;
+	width: 100px;
+	height: 60px;
+}
+.mainlogo a{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 30px;
+	background-color: linen;
+	margin-right: 60px;
+	padding:0;
+	text-decoration: none;
+	color: #900C3F; /*garnet*/
+	float:left;
+}
+
+
+#hmainmenu{
+	clear: right;/*why does not work?*/
+	margin-bottom: 20px;
+}
+#hmenunav ul{
+	list-style-type:none;
+	margin-right:60px;
+	/*width: 100%; dependiendo de cómo quede el search engine, lo cambio, no es compatible con los márgenes*/
+	padding:0;
+}
+.hmenunav>ul>li {
+	float:left;
+	padding: 15px;
+}
+.hmenunav ul li a{
+	font-family: Times, sans-serif;
+	font-size: 20px;
+	color: #A65164;
+	padding: 10px;
+	margin:20px;
+	text-decoration: none;
+}
+
+.hmenunav ul li:hover, .hmenunav ul>li>.dropdown-list>li:hover {
+	color:#6351A6;
+	background-color: #E5E1F5  ;
+}
+.hmenunav ul>li>.dropdown-list{
+	position: absolute; 
+	width:16%;
+	list-style: none;
+	display: none;
+}
+.hmenunav ul>li>.dropdown-list>li{
+	padding: 15px;
+}
+.hmenunav ul>li>.dropdown-list>li>a{
+	font-family: Times, sans-serif;
+	font-size: 20;
+	color: #A65164;
+	padding: 5px;
+	margin:5px;
+	text-decoration: none;
+}
+.hmenunav ul>li:hover>.dropdown-list{
+	display: block;
+}
+
+.hmenunav ul>li>.dropdown-list>li>a:hover{
+	display: block;
+}
+.hmenunav ul li a.active{
+	color:#6351A6;
+	font-weight: bold;
+	background-color: white;
+}
+.hmenunav ul li>input[type=text] {
+    float: right;
+    padding: 1em
+    margin-left:10px;
+    border: 0.3px solid #A65164;
+    font-family: Times, sans-serif;
+    font-size: 20px;
+    color: #A65164;
+}
+
+/*include "lupa" in the searche engine*
+	.search_container{
+		float: right;
+	}
+	.search_container button{
+		float: right;
+  		padding: 17px 17px;
+ 		margin-top: 33px;
+ 		background: #ddd;
+ 		font-size: 20px;
+ 		border: none;
+ 		cursor: pointer;
+	}
+	.search_container button:hover {
+  	background: #ccc;
+}*/
+
+
+
+/*CONTINENTS*/
+.continents{
+	clear:both; /*it works here, what's the difference with the other clears in previos divs*/
+}
+._continent{
+	clear:both; /*it works here, what's the difference with the other clears in previos divs*/
+	margin: 40px;
+	padding:30px;
+}
+._continent_name{
+	font-family: Times, sans-serif;
+	color:#900C3F;
+	font-size: 40px;
+	padding: 10px;
+}
+._continent_name a{
+	text-decoration:none;
+	color: #900C3F; /*garnet*/
+	text-align: center;
+}
+.country {
+	margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+.country:hover{
+	border: 1px solid #777;
+}
+.country_picture{
+	width: 100%;
+    height: auto;
+}
+.country_name{
+    padding: 15px;
+    color:#900C3F;
+    font-weight: bold;
+    background-color: linen;
+    text-align: center;
+}
+#country_Cuba{
+	margin-bottom: 40px;
+}
+
+/*FOOTER*/
+#fmenu{
+	clear:both;
+	background-color: linen;
+}
+#fmainmenu{
+	clear: right;/*why does not work?*/
+}
+#fmenunav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+#fmenunav ul li {
+	float:right;
+	display: flex;
+}
+#fmenunav ul li a{
+	flex-direction: row;
+	flex-grow: 1;
+	font-family: Times, sans-serif;
+	font-size: 20px;
+	color: #A65164;
+	padding: 20px;
+	margin:20px;
+	text-decoration: none;
+}
+#fmenunav ul li a:hover{
+	color:#6351A6;
+	background-color: #E5E1F5;
+}
+.form_clock{
+	text-align: center;
+}
+.clock{
+	background-color: white;
+	color: #900C3F;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica; 
+}/*funcionan solo algunos atributos*/
+
