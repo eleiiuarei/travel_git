@@ -6,26 +6,26 @@ body{
 	padding: 0;
 }
 /*HEADER*/
-#hmenu{
+#headBlock{
 	background-color: linen; /*si esto marca todo el div, por qué se ve blanco en las cajas, no va anidado?
 	clear:both;/*why does not work?*/
 	clear: both;
 }
-.mainlogo{
+.main_logo{
 	float: left;
 	margin-left: 60px;
 	margin-bottom: 60px;
 }
-.mainlogo p{
+.main_logo p{
 	margin:20px;
 	float: left;
 }
-.mainlogo img{
+.main_logo img{
 	float: left;
 	width: 100px;
 	height: 60px;
 }
-.mainlogo a{
+.main_logo a{
 	font-family: Impact, Charcoal, sans-serif;
 	font-size: 30px;
 	background-color: linen;
@@ -35,17 +35,17 @@ body{
 	color: #900C3F; /*garnet*/
 	float:left;
 }
-#hmainmenu{
+.head_menu{
 	clear: right;/*why does not work?*/
 	margin-bottom: 20px;
 }
-#hmenunav ul{
+.head_menu_nav ul{
 	list-style-type:none;
 	margin-right:60px;
 	/*width: 100%; dependiendo de cómo quede el search engine, lo cambio, no es compatible con los márgenes*/
 	padding:0;
 }
-.hmenunav>ul>.navItem {
+.head_menu_nav>ul>.nav_item {
 	float:left;
 	padding: 15px;
 }
@@ -53,7 +53,7 @@ body{
 	float:left;
 	padding: 15px;
 }
-.hmenunav ul>.navItem>a{
+.head_menu_nav ul>.nav_item>a{
 	font-family: Times, sans-serif;
 	font-size: 20px;
 	color: #A65164;
@@ -61,21 +61,21 @@ body{
 	margin:20px;
 	text-decoration: none;
 }
-.hmenunav ul>.navItem:hover, .hmenunav ul>li>.dropdown-list>li:hover {
+.head_menu_nav ul>.nav_item:hover, .head_menu_nav ul>li>.dropdown-list>li:hover {
 	color:#6351A6;
 	background-color: #E5E1F5;
 	font-weight: bold;
 }
-.hmenunav ul>li>.dropdown-list{
+.head_menu_nav ul>li>.dropdown-list{
 	position: absolute; 
 	width:16%;
 	list-style: none;
 	display: none;
 }
-.hmenunav ul>li>.dropdown-list>li{
+.head_menu_nav ul>li>.dropdown-list>li{
 	padding: 15px;
 }
-.hmenunav ul>li>.dropdown-list>li>a{
+.head_menu_nav ul>li>.dropdown-list>li>a{
 	font-family: Times, sans-serif;
 	font-size: 20;
 	color: #A65164;
@@ -83,20 +83,20 @@ body{
 	margin:5px;
 	text-decoration: none;
 }
-.hmenunav ul>li:hover>.dropdown-list{
+.head_menu_nav ul>li:hover>.dropdown-list{
 	display: block;
 }
 
-.hmenunav ul>li>.dropdown-list>li>a:hover{
+.head_menu_nav ul>li>.dropdown-list>li>a:hover{
 	display: block;
 	background-color: #e6e6ff;
 }
-.hmenunav ul li a.active{
+.head_menu_nav ul li a.active{
 	color:#6351A6;
 	font-weight: bold;
 	background-color: white;
 }
-.hmenunav ul li>input[type=text] {
+.head_menu_nav ul li>input[type=text] {
     float: right;
     padding: 1em
     margin-left:10px;
@@ -192,24 +192,24 @@ body{
 }
 
 /*FOOTER*/
-#fmenu{
+#footBlock{
 	clear:both;
 	background-color: linen;
 }
-#fmainmenu{
+.foot_menu{
 	clear: right;/*why does not work?*/
 }
-#fmenunav ul{
+.foot_menu_nav ul{
 	list-style-type:none;
 	margin:0;
 	padding:0;
 	width: 100%;
 }
-#fmenunav ul li {
+.foot_menu_nav ul li {
 	float:right;
 	display: flex;
 }
-#fmenunav ul li a{
+.foot_menu_nav ul li a{
 	flex-direction: row;
 	flex-grow: 1;
 	font-family: Times, sans-serif;
@@ -219,10 +219,12 @@ body{
 	margin:20px;
 	text-decoration: none;
 }
-#fmenunav ul li a:hover{
+.foot_menu_nav ul li a:hover{
 	color:#6351A6;
 	background-color: #E5E1F5;
 }
+
+/*CLOCK*/
 .form_clock{
 	text-align: center;
 }
