@@ -48,7 +48,7 @@
     </script>-->
 </head>
 
-<body onmouseenter="welcome_country()">
+<body onmouseenter="change_picture(), welcome_country()" onmouseleave="welcome_country()" onfocus="clear_search()" onblur="clear_search()">
 
 <div class="menu" id="hmenu">
 	<div class="mainlogo">
@@ -71,7 +71,7 @@
 
 				<li class="navItem"><a href="photos">Gallery</a></li>
 				<li class="navItem"><a href="blog">BlogStory</a></li>
-				<li class="navItem"><input class="search" type="text" placeholder="Click to search" name="search"></li>
+				<li class="navItem"><input class="search" id="clickS" type="text" placeholder="Click here to search" name="search"></li>
 			</ul>
 			<!--<div class="search_container" id="search">
 				<form action="/action_page.php">
