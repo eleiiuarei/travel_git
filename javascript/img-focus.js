@@ -12,16 +12,26 @@ function change_picture () {
 
 function welcome_country () {
 	var welcomeSpain = document.getElementById('countryName');
-	welcomeSpain.addEventListener('mouseenter', function () {welcomeSpain.innerHTML = "Welcome to Spain!"});	
-	welcomeSpain.addEventListener('mouseleave', function () {welcomeSpain.innerHTML = "Already leaving?"});
+	welcomeSpain.addEventListener('mouseover', function () {welcomeSpain.innerHTML = "Welcome to Spain!"});	
+	welcomeSpain.addEventListener('mouseout', function () {welcomeSpain.innerHTML = "Already leaving?"});
 };
 
 function clear_search () {
 	var clickSearch = document.getElementById('clickS');
+	empty: empty_input () {
+		if (clickSearch.innerHTML != ""){
+			return clickSearch.innerHTML = "";
+		}
+	}
 	clickSearch.addEventListener('focus', function() {clickSearch.style.background = "yellow"});
 	clickSearch.addEventListener('blur', function() {clickSearch.style.background = "white"});
 };
 
-//, 
+function empty_input () {
+	if (clickSearch.innerHTML != ""){
+		return clickSearch.innerHTML = "";
+		};
+}
+console.log(empty_input());
 
 //
