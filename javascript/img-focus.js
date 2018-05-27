@@ -16,22 +16,21 @@ function welcome_country () {
 	welcomeSpain.addEventListener('mouseout', function () {welcomeSpain.innerHTML = "Already leaving?"});
 };
 
-function clear_search () {
-	var clickSearch = document.getElementById('clickS');
-	empty: empty_input () {
-		if (clickSearch.innerHTML != ""){
-			return clickSearch.innerHTML = "";
-		}
-	}
-	clickSearch.addEventListener('focus', function() {clickSearch.style.background = "yellow"});
-	clickSearch.addEventListener('blur', function() {clickSearch.style.background = "white"});
+
+/* function clear_search () {
+        var clickSearch = document.getElementById('clickS');
+      empty: empty_input () {
+              if (clickSearch.innerHTML != ""){
+                      return clickSearch.innerHTML = "";
+              }
+      }
+        clickSearch.addEventListener('focus', function() {clickSearch.style.background = "yellow"});
+        clickSearch.addEventListener('blur', function() {clickSearch.style.background = "white"});
 };
 
 function empty_input () {
-	if (clickSearch.innerHTML != ""){
-		return clickSearch.innerHTML = "";
-		};
+       if (clickSearch.innerHTML != ""){
+               return clickSearch.innerHTML = "";
+               };
 }
-console.log(empty_input());
-
-//
+console.log(empty_input());*/
