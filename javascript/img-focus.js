@@ -11,14 +11,20 @@ countrySpain.addEventListener('mouseout', function () {countrySpain.src = '../im
 welcomeSpain.addEventListener('mouseover', function () {welcomeSpain.innerHTML = "Welcome to Spain!"});	
 welcomeSpain.addEventListener('mouseout', function () {welcomeSpain.innerHTML = "Already leaving?"});
 
+//haciendo referencia a varios elementos solo actúa sobre el último.
 var countries = document.getElementsByClassName ('country_name');
+
 countries [3].addEventListener ('mouseenter', function() {countries[3].innerHTML = 'WELCOME to America!'});
 countries [1, 2].addEventListener ('mouseenter', function() {countries[1, 2].innerHTML = 'WELCOME to Asia!'});
 countries [0,1,2,3].addEventListener ('mouseleave', function () {countries [0,1,2,3].innerHTML = 'BYE BYE!'});
 
+//cambios de color en motor de búsqueda
+var clickSearch = document.getElementById('clickS');
+clickSearch.addEventListener('focus', function() {clickSearch.style.background = "yellow"});
+clickSearch.addEventListener('blur', function() {clickSearch.style.background = "white"});
 
-/* function clear_search () {
-        var clickSearch = document.getElementById('clickS');
+/*function clear_search () {
+        
       empty: empty_input () {
               if (clickSearch.innerHTML != ""){
                       return clickSearch.innerHTML = "";
