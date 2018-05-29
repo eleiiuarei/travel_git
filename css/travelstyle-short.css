@@ -35,7 +35,17 @@
 	color: #900C3F; /*garnet*/
 	float:left;
 }
+.mainlogo2 a {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 30px;
+	background-color: rgba(181, 219, 234, 0.4);
+	margin-right: 60px;
+	padding:0;
+	text-decoration: none;
+	color: #4DB8E4; /*garnet*/
+	float:left;
 
+}
 
 #hmainmenu{
 	clear: right;/*why does not work?*/
@@ -125,6 +135,10 @@
 /*CONTINENTS*/
 .continents{
 	clear:both; /*it works here, what's the difference with the other clears in previos divs*/
+	background-color: white;
+}
+.continentsbg{
+	background-color: #F1F3F4   /*soft grey*/
 }
 ._continent{
 	clear:both; /*it works here, what's the difference with the other clears in previos divs*/
@@ -165,6 +179,48 @@
 #country_Cuba{
 	margin-bottom: 40px;
 }
+.caja_btn{
+	margin:1px;
+	padding:5px;
+	text-align: center;
+	text-decoration:none;
+}
+.btn_history{
+	background-color: #85D5D6; /* blue-grey */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+}
+.btn_history p{
+	text-align: center;
+}
+
+
+/*HIDDEN ELEMENTS*/
+.hidden_alert{
+	position: absolute; 
+	display: none;
+}
+
+.show_alert{
+	position: absolute; 
+	display: block;
+	margin:50px;
+	padding:25px;
+	text-align: center;
+	text-decoration:none;
+	background-color: white;
+	border: grey, solid;
+}
+.show_alert p{
+	text-align: center;
+	font-size: 20px;
+}
+
+
 
 /*FOOTER*/
 #fmenu{

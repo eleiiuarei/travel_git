@@ -4,16 +4,14 @@
 	<meta charset="utf-8">
 	<title>Travel SHORT again</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/travelstyle-short.css">
-	
-	
+	<link rel="stylesheet" type="text/css" href="../css/travelstyle-short.css">	
 </head>
 
 <body>
 
 <div class="menu" id="hmenu">
-	<div class="mainlogo">
-		<a href="TRAVEL.htm">
+	<div class="mainlogo" id="mainLogo">
+		<a id="linkLogo" href="TRAVEL - short.html" target="_blank">
 			<img src="../img/mapa-mundi.svg" alt="Around the World">
 			<p>Travel like you mean it</p>
 		</a>
@@ -46,13 +44,22 @@
 
 <div id="fecha">FECHA</div>
 
-<div class="continents">
+<div class="continents" id="continentsBlock">
 
 	<div class="_continent" id="_continentEurope">
 		<div class="_continent_name" id="Europe">
 			<a href="Europe.html">
 				<h2 id="Europe_head" title="Travel to Europe">Europe</h2>
 			</a>
+		</div>
+		<div class="caja_btn">
+			<button class="btn_history" id="btnHistory" type="button">History</button>
+		</div>
+		
+		<div class="hidden_alert" id="hiddenEurope">
+			<p>Page in construction. Do you want to return to the main page?</p>
+			<button class ="btn_alertYes" id="alertYes" type="button">Yes</button>
+			<button class= "btn_alertNo" id='alertNo' type="button">No</button>
 		</div>
 		<div>
 			<div class="country" id=country_Spain>
