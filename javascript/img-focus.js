@@ -43,12 +43,17 @@ continents.addEventListener('mousemove', function(){continents.className = 'cont
 
 //mensaje de alerta al click on button
 var btnHistory = document.getElementById('btnHistory');
-var hiddenEurope = document.getElementById('hiddenEurope');
-var alertYes = document.getElementById('alertYes');
+var capa1HiddenEurope = document.getElementById('capa1HiddenEurope');
+var btn1AlertYes = document.getElementById('btn1AlertYes');
+var btn1AlertNo = document.getElementById('btn1AlertNo');
+var capa2HiddenEurope = document.getElementById('capa2HiddenEurope');
+var btn1Close = document.getElementById('btn1Close');
 
-btnHistory.addEventListener('click', function(){hiddenEurope.className ='show_alert'});
-alertYes.addEventListener('click', function(){hiddenEurope.className = 'hidden_alert'});
-
+btnHistory.addEventListener('click', function(){capa1HiddenEurope.className ='show_alert'});
+btn1AlertYes.addEventListener('click', function(){capa1HiddenEurope.className = 'hidden_alert'});
+btn1AlertNo.addEventListener('click', function(){capa2HiddenEurope.className = 'show_alert'});
+btn1Close.addEventListener('click', function(){capa2HiddenEurope.className = 'hidden_alert'});
+btn1Close.addEventListener('click', function(){capa1HiddenEurope.className = 'hidden_alert'});
 
 
 /*function clear_search () {
